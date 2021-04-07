@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ProductTagsCell" id="gTV-IL-0wX" customClass="ProductTagsCell" customModule="Fitternity_Assignment" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="220" height="60"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="220" height="60"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MX3-lX-yfZ">
+                        <rect key="frame" x="4" y="4" width="212" height="52"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SplashScreen" translatesAutoresizingMaskIntoConstraints="NO" id="lDv-8b-kuO" customClass="CustomImageView" customModule="Fitternity_Assignment" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="52" height="52"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="52" id="AYn-dZ-WTK"/>
+                                    <constraint firstAttribute="height" constant="52" id="d4j-WX-n7y"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="c0H-lE-OOX">
+                                <rect key="frame" x="60" y="7.5" width="144" height="37"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pjh-IU-tvu">
+                                        <rect key="frame" x="0.0" y="0.0" width="144" height="17.5"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                        <color key="textColor" name="BorderYellow"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="51J-nW-loY">
+                                        <rect key="frame" x="0.0" y="21.5" width="144" height="15.5"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="13"/>
+                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="c0H-lE-OOX" firstAttribute="leading" secondItem="lDv-8b-kuO" secondAttribute="trailing" constant="8" id="YXO-LQ-dXf"/>
+                            <constraint firstItem="lDv-8b-kuO" firstAttribute="leading" secondItem="MX3-lX-yfZ" secondAttribute="leading" id="ccH-LI-Jnd"/>
+                            <constraint firstAttribute="bottom" secondItem="lDv-8b-kuO" secondAttribute="bottom" id="gvF-Ib-a4H"/>
+                            <constraint firstItem="lDv-8b-kuO" firstAttribute="top" secondItem="MX3-lX-yfZ" secondAttribute="top" id="igV-Ob-OYL"/>
+                            <constraint firstItem="c0H-lE-OOX" firstAttribute="centerY" secondItem="lDv-8b-kuO" secondAttribute="centerY" id="qAd-Pe-T05"/>
+                            <constraint firstAttribute="trailing" secondItem="c0H-lE-OOX" secondAttribute="trailing" constant="8" id="ukq-yd-c0C"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="MX3-lX-yfZ" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="4" id="FYN-Cj-MDk"/>
+                <constraint firstAttribute="trailing" secondItem="MX3-lX-yfZ" secondAttribute="trailing" constant="4" id="L27-dV-b5P"/>
+                <constraint firstItem="MX3-lX-yfZ" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="4" id="bR2-RH-jTg"/>
+                <constraint firstAttribute="bottom" secondItem="MX3-lX-yfZ" secondAttribute="bottom" constant="4" id="yDA-ud-5Aq"/>
+            </constraints>
+            <size key="customSize" width="220" height="60"/>
+            <connections>
+                <outlet property="descriptionLabel" destination="51J-nW-loY" id="U75-Kb-MU0"/>
+                <outlet property="parentView" destination="MX3-lX-yfZ" id="qbm-zC-plg"/>
+                <outlet property="productTagImage" destination="lDv-8b-kuO" id="rCi-60-Cva"/>
+                <outlet property="titleLabel" destination="Pjh-IU-tvu" id="ZNx-3t-eWT"/>
+            </connections>
+            <point key="canvasLocation" x="160.86956521739131" y="126.5625"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="SplashScreen" width="295" height="574.5"/>
+        <namedColor name="BorderYellow">
+            <color red="0.98431372549019602" green="0.6470588235294118" blue="0.13333333333333333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
